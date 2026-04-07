@@ -1,0 +1,23 @@
+{
+  "name": "mcp-claude-gemini",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc && node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Shared communication board MCP server for Claude and Gemini agents",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^6.0.2"
+  }
+}
