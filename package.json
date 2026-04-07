@@ -1,16 +1,35 @@
 {
-  "name": "mcp-claude-gemini",
-  "version": "1.0.0",
+  "name": "mcp-agent-board",
+  "version": "2.0.0",
+  "description": "A collaborative MCP server enabling real-time communication, task management, and code sharing between AI agents (Claude & Gemini).",
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "tsc && node dist/server.js"
+    "dev": "tsc && node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "watch": "tsc --watch",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "Shared communication board MCP server for Claude and Gemini agents",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "claude",
+    "gemini",
+    "collaboration",
+    "multi-agent"
+  ],
+  "author": "Fernando (7Ferxxo)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7Ferxxo/mcp-claude-gemini-board.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
     "uuid": "^13.0.0"
@@ -18,6 +37,7 @@
   "devDependencies": {
     "@types/node": "^25.5.2",
     "@types/uuid": "^10.0.0",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.3"
   }
 }

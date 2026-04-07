@@ -1,4 +1,21 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+
+# Agent state (private, never commit)
 board.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Temp files
 *.tmp
+*.log
